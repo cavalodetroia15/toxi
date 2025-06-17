@@ -1,106 +1,70 @@
 body {
     color: white;
     background: black;
-    margin: 0;
+    margin: 0px;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
 
 header {
-    border-bottom: solid 3px rgb(0, 204, 255);
+    border-bottom: solid 2px rgb(42, 122, 228);
     padding: 20px;
-    font-size: 36px;
-    color: rgb(0, 204, 255);
+    font-size: 32px;
+    color: rgb(42, 122, 228);
     text-align: center;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 0 4px 10px rgba(0, 204, 255, 0.5);
 }
 
 .chamada {
-    background: linear-gradient(90deg, rgb(184, 156, 213), rgb(42, 122, 228));
-    padding: 80px 20px;
+    background: rgb(184, 156, 213);
+    padding-bottom: 80px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
-    border-radius: 20px;
-    margin: 40px;
-    box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+    align-items: center;
 }
 
 .chamada-texto {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 h1 {
-    font-size: 48px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+    margin: 0 0 10px 0;
 }
 
 p {
-    font-size: 22px;
-    color: black;
-}
-
-.categoria {
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.categoria h2 {
-    color: rgb(0, 204, 255);
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin: 0;
 }
 
 .categoria-videos {
     display: flex;
     overflow-x: auto;
-    gap: 15px;
-    padding-bottom: 10px;
+    gap: 10px;
+    padding: 0 20px;
 }
 
-.categoria-videos a {
-    transition: transform 0.3s, opacity 0.3s;
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
 }
 
 .categoria-videos img {
-    opacity: 0.6;
+    opacity: 0.5;
     height: 200px;
-    border-radius: 12px;
-    transition: transform 0.3s, opacity 0.3s, border 0.3s;
-    border: 2px solid transparent;
+    cursor: pointer;
+    transition: opacity 0.3s ease, border 0.3s ease;
 }
 
 .categoria-videos img:hover {
-    opacity: 1;
-    border: 3px solid rgb(0, 255, 0);
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+    opacity: 1.0;
+    border: 3px solid green;
 }
 
-iframe {
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
-}
-
-/* Scroll personalizado */
-.categoria-videos::-webkit-scrollbar {
-    height: 8px;
-}
-
-.categoria-videos::-webkit-scrollbar-track {
-    background: #333;
-    border-radius: 10px;
-}
-
-.categoria-videos::-webkit-scrollbar-thumb {
-    background: rgb(0, 204, 255);
-    border-radius: 10px;
-}
-
-.categoria-videos::-webkit-scrollbar-thumb:hover {
-    background: rgb(0, 153, 200);
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    padding-left: 20px;
 }
