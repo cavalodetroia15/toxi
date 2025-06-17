@@ -1,65 +1,58 @@
 body {
-    color: #e0e0e0;
-    background: #0d0d0d;
+    color: white;
+    background: black;
     margin: 0;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
 
 header {
-    border-bottom: 2px solid #00ffff;
+    border-bottom: solid 3px rgb(0, 204, 255);
     padding: 20px;
-    font-size: 32px;
-    color: #00ffff;
-    text-shadow: 0 0 10px #00ffff;
+    font-size: 36px;
+    color: rgb(0, 204, 255);
     text-align: center;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 4px 10px rgba(0, 204, 255, 0.5);
 }
 
 .chamada {
-    background: linear-gradient(90deg, #6f00ff, #00ffff);
-    padding: 80px 0;
+    background: linear-gradient(90deg, rgb(184, 156, 213), rgb(42, 122, 228));
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    box-shadow: 0 0 20px #00ffff;
+    gap: 50px;
     flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
 }
 
 .chamada-texto {
     max-width: 500px;
 }
 
-.chamada-texto h1 {
-    font-size: 50px;
-    color: #00ffff;
-    text-shadow: 0 0 10px #00ffff;
-    margin-bottom: 10px;
+h1 {
+    font-size: 48px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
-.chamada-texto p {
+p {
     font-size: 22px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 8px;
-}
-
-iframe {
-    border-radius: 15px;
-    box-shadow: 0 0 20px #00ffff;
-    max-width: 100%;
+    color: black;
 }
 
 .categoria {
-    padding: 0 20px;
+    padding: 20px;
     margin-top: 50px;
 }
 
 .categoria h2 {
-    color: #00ffff;
-    text-shadow: 0 0 8px #00ffff;
-    margin-bottom: 20px;
+    color: rgb(0, 204, 255);
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
 .categoria-videos {
@@ -69,19 +62,45 @@ iframe {
     padding-bottom: 10px;
 }
 
+.categoria-videos a {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
 .categoria-videos img {
     opacity: 0.6;
-    height: 220px;
-    border-radius: 10px;
-    transition: 0.3s ease;
+    height: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s, opacity 0.3s, border 0.3s;
+    border: 2px solid transparent;
 }
 
 .categoria-videos img:hover {
     opacity: 1;
-    border: 3px solid #00ff99;
-    box-shadow: 0 0 20px #00ff99;
+    border: 3px solid rgb(0, 255, 0);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
 }
 
-a {
-    text-decoration: none;
+iframe {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
+}
+
+/* Scroll personalizado */
+.categoria-videos::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categoria-videos::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+.categoria-videos::-webkit-scrollbar-thumb {
+    background: rgb(0, 204, 255);
+    border-radius: 10px;
+}
+
+.categoria-videos::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 153, 200);
 }
