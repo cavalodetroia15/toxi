@@ -1,23 +1,24 @@
 body {
     color: white;
-    background: black;
+    background: #1a1a1a; /* Um preto um pouco mais suave */
     margin: 0;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
 
 header {
-    border-bottom: solid 3px rgb(0, 204, 255);
+    border-bottom: solid 3px #00ff66; /* Verde neon para o destaque */
     padding: 20px;
     font-size: 36px;
-    color: rgb(0, 204, 255);
+    color: #00ff66; /* Verde neon para o texto do header */
     text-align: center;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 0 4px 10px rgba(0, 204, 255, 0.5);
+    background-color: #0d0d0d; /* Um tom de preto bem escuro */
+    box-shadow: 0 4px 15px rgba(0, 255, 102, 0.7); /* Sombra mais vibrante */
 }
 
 .chamada {
-    background: linear-gradient(90deg, rgb(184, 156, 213), rgb(42, 122, 228));
+    /* Gradiente com tons de roxo, azul e um toque de verde para a seção principal */
+    background: linear-gradient(90deg, #6a0dad, #007bff, #00ff66);
     padding: 80px 20px;
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@ header {
     flex-wrap: wrap;
     border-radius: 20px;
     margin: 40px;
-    box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.8); /* Sombra vibrante */
 }
 
 .chamada-texto {
@@ -35,13 +36,13 @@ header {
 
 h1 {
     font-size: 48px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    color: #f0f0f0; /* Um branco levemente acinzentado */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Sombra para o texto */
 }
 
 p {
     font-size: 22px;
-    color: black;
+    color: #e0e0e0; /* Um branco levemente acinzentado para o parágrafo */
 }
 
 .categoria {
@@ -50,7 +51,7 @@ p {
 }
 
 .categoria h2 {
-    color: rgb(0, 204, 255);
+    color: #00ff66; /* Verde neon para o título da categoria */
     font-size: 32px;
     margin-bottom: 15px;
 }
@@ -63,45 +64,45 @@ p {
 }
 
 .categoria-videos a {
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .categoria-videos img {
-    opacity: 0.6;
+    opacity: 0.7; /* Ligeiramente mais visível que antes */
     height: 200px;
     border-radius: 12px;
-    transition: transform 0.3s, opacity 0.3s, border 0.3s;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, border 0.3s ease-in-out;
     border: 2px solid transparent;
 }
 
 .categoria-videos img:hover {
     opacity: 1;
-    border: 3px solid rgb(0, 255, 0);
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+    border: 3px solid #ff00ea; /* Roxo vibrante no hover para contraste */
+    transform: scale(1.08); /* Aumenta um pouco mais no hover */
+    box-shadow: 0 0 20px rgba(255, 0, 234, 0.8); /* Sombra mais intensa */
 }
 
 iframe {
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.8); /* Sombra dos iframes mais intensa e verde neon */
+    border: 2px solid #00ff66; /* Borda sutil nos iframes */
 }
 
 /* Scroll personalizado */
 .categoria-videos::-webkit-scrollbar {
-    height: 8px;
+    height: 10px; /* Um pouco mais alto */
 }
 
 .categoria-videos::-webkit-scrollbar-track {
-    background: #333;
+    background: #222; /* Fundo mais escuro */
     border-radius: 10px;
 }
 
 .categoria-videos::-webkit-scrollbar-thumb {
-    background: rgb(0, 204, 255);
+    background: #00ff66; /* Verde neon para o thumb do scroll */
     border-radius: 10px;
 }
 
 .categoria-videos::-webkit-scrollbar-thumb:hover {
-    background: rgb(0, 153, 200);
+    background: #00e65c; /* Um verde ligeiramente mais escuro no hover */
 }
-
